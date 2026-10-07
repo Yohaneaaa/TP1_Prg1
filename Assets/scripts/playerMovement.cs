@@ -2,83 +2,50 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    // Variables
-    public float velCaminar = 10f;
-    public float velCorrer = 15f;
-
-    public float fuerza1 = 8f;
-    public float fuerzaAire = 7f;
+    public float velocidad = 30f;
+    public float fuerzaSalto = 20f;
+    public float fuerzaDobleSalto = 24f;
     public int maxSaltos = 2;
 
-    // Gravedad extra para que el salto se sienta más ágil y menos flotante
-    public float gravedadExtra = 2f;
-
-    private int saltos = 0;
     private Rigidbody rb;
-
-    [HideInInspector] public float fuerza1Original;
+    private Transform cam;
+    private int saltos = 0;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        fuerza1Original = fuerza1;
-
-        // Congelar rotación para que el cuerpo no se caiga rodando
+        cam = Camera.main.transform;
         rb.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     void Update()
     {
-        Mover();
-        Saltar();
-    }
+        // Movimiento: W va hacia donde mira la cámara
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+        Vector3 adelante = cam.forward;
+        Vector3 derecha = cam.right;
+        adelante.y = 0;
+        derecha.y = 0;
 
-    void FixedUpdate()
-    {
-        // Cuando el jugador cae, la gravedad es más fuerte
-        if (rb.linearVelocity.y < 0f)
-        {
-            rb.AddForce(Physics.gravity * gravedadExtra, ForceMode.Acceleration);
-        }
-    }
+        Vector3 dir = adelante.normalized * z + derecha.normalized * x;
+        rb.linearVelocity = new Vector3(dir.x * velocidad, rb.linearVelocity.y, dir.z * velocidad);
 
-    // Funciones propias
-    void Mover()
-    {
-        float velActual = Input.GetKey(KeyCode.LeftShift) ? velCorrer : velCaminar;
-
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
-
-        // Evita que en diagonal vaya más rápido
-        Vector3 direccion = Vector3.ClampMagnitude(new Vector3(x, 0f, z), 1f);
-
-        rb.linearVelocity = new Vector3(
-            direccion.x * velActual,
-            rb.linearVelocity.y,
-            direccion.z * velActual
-        );
-    }
-
-    void Saltar()
-    {
+        // Salto y doble salto
         if (Input.GetKeyDown(KeyCode.Space) && saltos < maxSaltos)
         {
-            // El primer salto usa fuerza1 y el segundo (en el aire) usa fuerzaAire
-            float fuerza = (saltos == 0) ? fuerza1 : fuerzaAire;
-
+            float fuerza = (saltos == 0) ? fuerzaSalto : fuerzaDobleSalto;
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, fuerza, rb.linearVelocity.z);
             saltos++;
         }
     }
 
-    // Colisiones
+    // Al tocar el suelo, se reinician los saltos
     void OnCollisionEnter(Collision c)
     {
-        foreach (ContactPoint contacto in c.contacts)
+        foreach (ContactPoint punto in c.contacts)
         {
-            // Si lo que tocó está por debajo, es el suelo: se reinician los saltos
-            if (contacto.normal.y > 0.6f)
+            if (punto.normal.y > 0.5f)
             {
                 saltos = 0;
                 break;
