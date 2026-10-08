@@ -34,7 +34,7 @@ public class playerMovement : MonoBehaviour
         Vector3 dir = adelante.normalized * z + derecha.normalized * x;
         rb.linearVelocity = new Vector3(dir.x * velocidad, rb.linearVelocity.y, dir.z * velocidad);
 
-        // Salto y doble salto
+      
         if (Input.GetKeyDown(KeyCode.Space) && saltos < maxSaltos)
         {
             float fuerza = (saltos == 0) ? fuerzaSalto : fuerzaDobleSalto;
