@@ -1030,7 +1030,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365007712}
-  - component: {fileID: 365007713}
   m_Layer: 0
   m_Name: plataformasDeMovimiento
   m_TagString: Untagged
@@ -1058,20 +1057,6 @@ Transform:
   - {fileID: 1331625946}
   m_Father: {fileID: 118665648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &365007713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365007711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
-  desplazamiento: {x: 0, y: 40, z: 0}
-  velocidad: 20
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,52 +1330,6 @@ Transform:
   - {fileID: 831484116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &749889976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 749889977}
-  - component: {fileID: 749889978}
-  m_Layer: 0
-  m_Name: PlataformaMovil (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &749889977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749889976}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0010783836, y: 0.9999914, z: -0.000004326, w: 0.0040115253}
-  m_LocalPosition: {x: -0.39045203, y: -353.7796, z: 12.026942}
-  m_LocalScale: {x: 0.014589636, y: 0.9996858, z: 0.027014995}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1236777465}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &749889978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749889976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
-  desplazamiento: {x: 0, y: 40, z: 0}
-  velocidad: 20
 --- !u!1 &806077773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +1983,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2135,9 +2074,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193424425}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.999992, z: -0, w: 0.0040115276}
-  m_LocalPosition: {x: -90.4, y: 221.6, z: -268.9}
-  m_LocalScale: {x: 7.6423564, y: 7.0103726, z: 7.669465}
+  m_LocalRotation: {x: 2.3283064e-10, y: -0.999992, z: 0.0000000030267984, w: 0.0040115267}
+  m_LocalPosition: {x: -90.39995, y: 221.6, z: -268.89954}
+  m_LocalScale: {x: 7.6423645, y: 7.0103726, z: 7.6694736}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2155,6 +2094,7 @@ GameObject:
   - component: {fileID: 1236777467}
   - component: {fileID: 1236777466}
   - component: {fileID: 1236777469}
+  - component: {fileID: 1236777470}
   m_Layer: 0
   m_Name: plataforma_mov2
   m_TagString: Untagged
@@ -2174,9 +2114,7 @@ Transform:
   m_LocalPosition: {x: -72, y: 129, z: 23}
   m_LocalScale: {x: 68.54414, y: 1, z: 37.01445}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 749889977}
-  - {fileID: 2133185442}
+  m_Children: []
   m_Father: {fileID: 365007712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1236777466
@@ -2199,7 +2137,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 60}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1236777467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2271,6 +2209,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
   desplazamiento: {x: -60, y: 0, z: 0}
   velocidad: 20
+--- !u!54 &1236777470
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236777464}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1267081427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,6 +2249,7 @@ GameObject:
   - component: {fileID: 1267081430}
   - component: {fileID: 1267081429}
   - component: {fileID: 1267081433}
+  - component: {fileID: 1267081434}
   m_Layer: 0
   m_Name: plataforma_ascensor_abajo
   m_TagString: Untagged
@@ -2398,6 +2364,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
   desplazamiento: {x: 0, y: -55, z: 0}
   velocidad: 20
+--- !u!54 &1267081434
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267081427}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1331625945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,6 +2404,7 @@ GameObject:
   - component: {fileID: 1331625948}
   - component: {fileID: 1331625947}
   - component: {fileID: 1331625950}
+  - component: {fileID: 1331625951}
   m_Layer: 0
   m_Name: plataforma_mov3
   m_TagString: Untagged
@@ -2453,7 +2447,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 60, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1331625948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2525,6 +2519,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
   desplazamiento: {x: 60, y: 9, z: 0}
   velocidad: 20
+--- !u!54 &1331625951
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331625945}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1380190895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,6 +2559,7 @@ GameObject:
   - component: {fileID: 1380190898}
   - component: {fileID: 1380190897}
   - component: {fileID: 1380190901}
+  - component: {fileID: 1380190902}
   m_Layer: 0
   m_Name: plataforma_mov1
   m_TagString: Untagged
@@ -2581,7 +2603,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 60, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1380190898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2653,6 +2675,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
   desplazamiento: {x: 60, y: 0, z: 0}
   velocidad: 20
+--- !u!54 &1380190902
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380190895}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1388965694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,6 +2847,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452686025}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1469486397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1469486398}
+  m_Layer: 0
+  m_Name: puntoTransporte
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1469486398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469486397}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1560293506}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560293502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,9 +2892,10 @@ GameObject:
   - component: {fileID: 1560293503}
   - component: {fileID: 1560293508}
   - component: {fileID: 1560293509}
+  - component: {fileID: 1560293510}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2911,7 +2992,8 @@ Transform:
   m_LocalPosition: {x: -212.2, y: 112.5, z: -857.6}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1469486398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 2.075, y: -185.049, z: 0.272}
 --- !u!54 &1560293508
@@ -2940,7 +3022,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1560293509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2957,6 +3039,21 @@ MonoBehaviour:
   fuerzaSalto: 20
   fuerzaDobleSalto: 24
   maxSaltos: 2
+--- !u!114 &1560293510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560293502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3260337ea55cf8042ba4b46689e0e570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::agarrarObjeto
+  objeto: {fileID: 1193424430}
+  puntoTransporte: {fileID: 1469486398}
+  distanciaRecoger: 10
 --- !u!1 &1585998879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3228,7 @@ GameObject:
   - component: {fileID: 1931394640}
   - component: {fileID: 1931394639}
   - component: {fileID: 1931394642}
+  - component: {fileID: 1931394643}
   m_Layer: 0
   m_Name: plataforma_ascensor_arriba
   m_TagString: Untagged
@@ -3245,6 +3343,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
   desplazamiento: {x: 0, y: 55, z: 0}
   velocidad: 20
+--- !u!54 &1931394643
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931394637}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1978782352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,7 +3715,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2106093596}
-  - component: {fileID: 2106093597}
   m_Layer: 0
   m_Name: PlataformaMovil
   m_TagString: Untagged
@@ -3613,66 +3737,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380190896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2106093597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106093595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
-  desplazamiento: {x: 0, y: 40, z: 0}
-  velocidad: 20
---- !u!1 &2133185441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2133185442}
-  - component: {fileID: 2133185443}
-  m_Layer: 0
-  m_Name: plataformaMovil
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2133185442
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133185441}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0010783836, y: 0.9999914, z: -0.000004326, w: 0.0040115253}
-  m_LocalPosition: {x: 3.027763, y: -251.4546, z: 23.225863}
-  m_LocalScale: {x: 0.014589636, y: 0.9996858, z: 0.027014995}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1236777465}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2133185443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133185441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
-  desplazamiento: {x: 0, y: 40, z: 0}
-  velocidad: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3680,8 +3744,8 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 1560293506}
   - {fileID: 1193424430}
+  - {fileID: 1560293506}
   - {fileID: 118665648}
   - {fileID: 649379081}
   - {fileID: 1585998880}
