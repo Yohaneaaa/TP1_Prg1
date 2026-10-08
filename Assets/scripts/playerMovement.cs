@@ -20,7 +20,6 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
-        // Movimiento: W va hacia donde mira la cámara
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 adelante = cam.forward;
@@ -31,7 +30,6 @@ public class playerMovement : MonoBehaviour
         Vector3 dir = adelante.normalized * z + derecha.normalized * x;
         rb.linearVelocity = new Vector3(dir.x * velocidad, rb.linearVelocity.y, dir.z * velocidad);
 
-        // Salto y doble salto
         if (Input.GetKeyDown(KeyCode.Space) && saltos < maxSaltos)
         {
             float fuerza = (saltos == 0) ? fuerzaSalto : fuerzaDobleSalto;
@@ -40,7 +38,6 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    // Al tocar el suelo, se reinician los saltos
     void OnCollisionEnter(Collision c)
     {
         foreach (ContactPoint punto in c.contacts)

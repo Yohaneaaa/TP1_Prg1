@@ -1072,7 +1072,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
   desplazamiento: {x: 0, y: 40, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
   desplazamiento: {x: 0, y: 40, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &806077773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,9 +2269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
-  desplazamiento: {x: 0, y: 0, z: 60}
+  desplazamiento: {x: -60, y: 0, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &1267081427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2300,7 @@ Transform:
   m_GameObject: {fileID: 1267081427}
   serializedVersion: 2
   m_LocalRotation: {x: -0.012243408, y: -0.014410054, z: 0.009249139, w: 0.99977845}
-  m_LocalPosition: {x: -2.8, y: 55.1, z: 278.6}
+  m_LocalPosition: {x: -3, y: 54.8, z: 276.9}
   m_LocalScale: {x: 50.15763, y: 1.5386332, z: 18.626703}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2399,9 +2396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
-  desplazamiento: {x: 0, y: -40, z: 0}
+  desplazamiento: {x: 0, y: -55, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &1331625945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,9 +2523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
-  desplazamiento: {x: 0, y: 9, z: 60}
+  desplazamiento: {x: 60, y: 9, z: 0}
   velocidad: 20
-  espera: 4
 --- !u!1 &1380190895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,7 +2554,7 @@ Transform:
   m_GameObject: {fileID: 1380190895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 125.1, z: 125}
+  m_LocalPosition: {x: -5.2, y: 126.5, z: 132}
   m_LocalScale: {x: 68.54414, y: 1.366, z: 37.01445}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2658,7 +2653,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
   desplazamiento: {x: 60, y: 0, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &1388965694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,7 +3245,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
   desplazamiento: {x: 0, y: 55, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &1978782352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,7 +3627,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
   desplazamiento: {x: 0, y: 40, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1 &2133185441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,7 +3673,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
   desplazamiento: {x: 0, y: 40, z: 0}
   velocidad: 20
-  espera: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

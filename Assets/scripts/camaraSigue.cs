@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class camaraSigue : MonoBehaviour
 {
-    // Variables
+
     public Transform objetivo;
     public float velocidadGiro = 3f;
     public float velocidadTeclas = 100f;
