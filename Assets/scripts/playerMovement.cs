@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float velocidad = 30f;
-    public float fuerzaSalto = 20f;
-    public float fuerzaDobleSalto = 24f;
-    public int maxSaltos = 2;
+   
+    public float velocidad = 55f;
+    public float fuerzaSalto = 30f;
+    public float fuerzaDobleSalto = 30f;
+    public int maxSaltos = 1;
+    public float multiplicadorGravedad = 4f; 
 
+  
     private Rigidbody rb;
     private Transform cam;
     private int saltos = 0;
@@ -20,6 +23,7 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
+       
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 adelante = cam.forward;
@@ -30,6 +34,7 @@ public class playerMovement : MonoBehaviour
         Vector3 dir = adelante.normalized * z + derecha.normalized * x;
         rb.linearVelocity = new Vector3(dir.x * velocidad, rb.linearVelocity.y, dir.z * velocidad);
 
+        // Salto y doble salto
         if (Input.GetKeyDown(KeyCode.Space) && saltos < maxSaltos)
         {
             float fuerza = (saltos == 0) ? fuerzaSalto : fuerzaDobleSalto;
@@ -38,8 +43,17 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision c)
+   
+    void FixedUpdate()
     {
+        rb.AddForce(Physics.gravity * (multiplicadorGravedad - 1f), ForceMode.Acceleration);
+    }
+
+    
+    void OnCollisionStay(Collision c)
+    {
+        if (rb.linearVelocity.y > 0.1f) return;  
+
         foreach (ContactPoint punto in c.contacts)
         {
             if (punto.normal.y > 0.5f)
