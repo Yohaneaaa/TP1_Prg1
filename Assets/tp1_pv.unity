@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 71214110}
   - component: {fileID: 71214109}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: plataforma_limite2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,13 +224,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71214108}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09764472, y: 0.002146783, z: -0.0029136422, w: 0.99521476}
-  m_LocalPosition: {x: -72.5, y: 161.1, z: -577.6}
-  m_LocalScale: {x: 1, y: 24.522446, z: 261.99606}
+  m_LocalRotation: {x: -0.002232089, y: 0.9952184, z: 0.0976302, w: 0.0019508507}
+  m_LocalPosition: {x: -41.584396, y: 4.22747, z: 284.11496}
+  m_LocalScale: {x: 1, y: 24.522446, z: 261.99594}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 118665648}
+  m_LocalEulerAnglesHint: {x: -11.206, y: 0.283, z: -0.363}
+--- !u!1 &115586174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115586175}
+  m_Layer: 0
+  m_Name: waypoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &115586175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115586174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 129.93222, y: -0.00001, z: -260.80896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -11.206, y: 0.283, z: -0.363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &118665647
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +298,10 @@ Transform:
   - {fileID: 806077774}
   - {fileID: 1618128091}
   - {fileID: 460097654}
+  - {fileID: 968987620}
+  - {fileID: 71214112}
+  - {fileID: 189963047}
+  - {fileID: 2065438657}
   - {fileID: 157409088}
   - {fileID: 252441670}
   - {fileID: 1978782353}
@@ -510,7 +545,7 @@ GameObject:
   - component: {fileID: 189963045}
   - component: {fileID: 189963044}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: plataforma_limite3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -602,12 +637,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189963043}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09764472, y: 0.002146783, z: -0.0029136422, w: 0.99521476}
-  m_LocalPosition: {x: 20, y: 140.6, z: -698.5}
-  m_LocalScale: {x: 1, y: 24.522446, z: 133.16426}
+  m_LocalRotation: {x: -0.002232089, y: 0.9952184, z: 0.0976302, w: 0.0019508507}
+  m_LocalPosition: {x: -135.09543, y: -16.070894, z: 404.269}
+  m_LocalScale: {x: 1, y: 24.522446, z: 133.16422}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 118665648}
   m_LocalEulerAnglesHint: {x: -11.206, y: 0.283, z: -0.363}
 --- !u!1 &252441669
 GameObject:
@@ -637,8 +672,8 @@ Transform:
   m_GameObject: {fileID: 252441669}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0023028355, y: 0.0000046463324, z: 0.0020176473, w: 0.99999535}
-  m_LocalPosition: {x: -68.3951, y: 194.8811, z: -78.43149}
-  m_LocalScale: {x: 134.24144, y: 0.93813, z: 55.422016}
+  m_LocalPosition: {x: -67.1, y: 191.5, z: -78.4}
+  m_LocalScale: {x: 132.69229, y: 0.93813, z: 55.422016}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 118665648}
@@ -808,13 +843,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.049939364, y: 0.04001622, z: 0.00626967, w: -0.9979306}
-  m_LocalPosition: {x: -209.2, y: 152.6, z: -982.3}
-  m_LocalScale: {x: 1, y: 1, z: 3.9608}
+  m_LocalRotation: {x: 0.23123997, y: 0.31041673, z: -0.07670038, w: 0.91885066}
+  m_LocalPosition: {x: -174, y: 260, z: -829}
+  m_LocalScale: {x: 1.0619, y: 1.0619, z: 4.2059736}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 5.691, y: -364.64, z: -0.951}
+  m_LocalEulerAnglesHint: {x: 28.201, y: -322.624, z: 0.17}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,6 +1030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365007712}
+  - component: {fileID: 365007713}
   m_Layer: 0
   m_Name: plataformasDeMovimiento
   m_TagString: Untagged
@@ -1022,6 +1058,21 @@ Transform:
   - {fileID: 1331625946}
   m_Father: {fileID: 118665648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365007713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365007711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
+  desplazamiento: {x: 0, y: 40, z: 0}
+  velocidad: 20
+  espera: 2
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,13 +1227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460097653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07821349, y: -0.00008434489, z: -0.0010750886, w: 0.996936}
-  m_LocalPosition: {x: -15.123867, y: 24.07041, z: 132.368}
+  m_LocalRotation: {x: 0.108673126, y: -0.000117191565, z: -0.0010720055, w: 0.994077}
+  m_LocalPosition: {x: -12.6, y: 23.3, z: 128.6}
   m_LocalScale: {x: 58.915764, y: 15.253922, z: 44.782417}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 118665648}
-  m_LocalEulerAnglesHint: {x: 8.972, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.478, y: -0.027, z: -0.127}
 --- !u!65 &460097655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1295,6 +1346,53 @@ Transform:
   - {fileID: 831484116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &749889976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749889977}
+  - component: {fileID: 749889978}
+  m_Layer: 0
+  m_Name: PlataformaMovil (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749889977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749889976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0010783836, y: 0.9999914, z: -0.000004326, w: 0.0040115253}
+  m_LocalPosition: {x: -0.39045203, y: -353.7796, z: 12.026942}
+  m_LocalScale: {x: 0.014589636, y: 0.9996858, z: 0.027014995}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236777465}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &749889978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749889976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0, y: 40, z: 0}
+  velocidad: 20
+  espera: 2
 --- !u!1 &806077773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,7 +1791,7 @@ GameObject:
   - component: {fileID: 968987618}
   - component: {fileID: 968987617}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: plataforma_limite1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1785,12 +1883,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968987616}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09764472, y: 0.002146783, z: -0.0029136422, w: 0.99521476}
-  m_LocalPosition: {x: -70.2, y: 203, z: -366.1}
-  m_LocalScale: {x: 1, y: 24.522446, z: 70.5869}
+  m_LocalRotation: {x: -0.002232089, y: 0.9952184, z: 0.0976302, w: 0.0019508507}
+  m_LocalPosition: {x: -42.097095, y: 46.12867, z: 72.603294}
+  m_LocalScale: {x: 1, y: 24.522446, z: 70.58687}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 118665648}
   m_LocalEulerAnglesHint: {x: -11.206, y: 0.283, z: -0.363}
 --- !u!1 &1157467971
 GameObject:
@@ -2058,6 +2156,7 @@ GameObject:
   - component: {fileID: 1236777468}
   - component: {fileID: 1236777467}
   - component: {fileID: 1236777466}
+  - component: {fileID: 1236777469}
   m_Layer: 0
   m_Name: plataforma_mov2
   m_TagString: Untagged
@@ -2077,7 +2176,9 @@ Transform:
   m_LocalPosition: {x: -72, y: 129, z: 23}
   m_LocalScale: {x: 68.54414, y: 1, z: 37.01445}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 749889977}
+  - {fileID: 2133185442}
   m_Father: {fileID: 365007712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1236777466
@@ -2100,7 +2201,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 60}
 --- !u!23 &1236777467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2158,6 +2259,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236777464}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1236777469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236777464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
+  desplazamiento: {x: 0, y: 0, z: 60}
+  velocidad: 20
+  espera: 2
 --- !u!1 &1267081427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,8 +2286,9 @@ GameObject:
   - component: {fileID: 1267081431}
   - component: {fileID: 1267081430}
   - component: {fileID: 1267081429}
+  - component: {fileID: 1267081433}
   m_Layer: 0
-  m_Name: plataforma_ascensor_arriba
+  m_Name: plataforma_ascensor_abajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2186,7 +2303,7 @@ Transform:
   m_GameObject: {fileID: 1267081427}
   serializedVersion: 2
   m_LocalRotation: {x: -0.012243408, y: -0.014410054, z: 0.009249139, w: 0.99977845}
-  m_LocalPosition: {x: -5.4, y: 116.4, z: 277}
+  m_LocalPosition: {x: -2.8, y: 55.1, z: 278.6}
   m_LocalScale: {x: 50.15763, y: 1.5386332, z: 18.626703}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2270,6 +2387,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267081427}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1267081433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267081427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
+  desplazamiento: {x: 0, y: -40, z: 0}
+  velocidad: 20
+  espera: 2
 --- !u!1 &1331625945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,6 +2414,7 @@ GameObject:
   - component: {fileID: 1331625949}
   - component: {fileID: 1331625948}
   - component: {fileID: 1331625947}
+  - component: {fileID: 1331625950}
   m_Layer: 0
   m_Name: plataforma_mov3
   m_TagString: Untagged
@@ -2324,7 +2457,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 60, y: 0, z: 0}
 --- !u!23 &1331625948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2382,6 +2515,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331625945}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1331625950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331625945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0, y: 9, z: 60}
+  velocidad: 20
+  espera: 4
 --- !u!1 &1380190895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,6 +2542,7 @@ GameObject:
   - component: {fileID: 1380190899}
   - component: {fileID: 1380190898}
   - component: {fileID: 1380190897}
+  - component: {fileID: 1380190901}
   m_Layer: 0
   m_Name: plataforma_mov1
   m_TagString: Untagged
@@ -2411,9 +2560,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.3, y: 125.1, z: 125}
-  m_LocalScale: {x: 68.54414, y: -1.3662438, z: 37.01445}
+  m_LocalScale: {x: 68.54414, y: 1.366, z: 37.01445}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2106093596}
   m_Father: {fileID: 365007712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1380190897
@@ -2436,7 +2586,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 60, y: 0, z: 0}
 --- !u!23 &1380190898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2494,6 +2644,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380190895}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1380190901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380190895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
+  desplazamiento: {x: 60, y: 0, z: 0}
+  velocidad: 20
+  espera: 2
+--- !u!1 &1388965694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388965695}
+  m_Layer: 0
+  m_Name: waypoint1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388965695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388965694}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 129.93222, y: -0.00001, z: -260.80896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1452686025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,7 +3040,7 @@ Transform:
   m_GameObject: {fileID: 1618128090}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12067315, y: -0.00013013324, z: -0.0010705118, w: 0.99269176}
-  m_LocalPosition: {x: -162.9, y: -14.1, z: 311.3}
+  m_LocalPosition: {x: -159.5, y: -12.7, z: 314.7}
   m_LocalScale: {x: 54.598125, y: 13.026238, z: 38.085987}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2940,8 +3136,9 @@ GameObject:
   - component: {fileID: 1931394641}
   - component: {fileID: 1931394640}
   - component: {fileID: 1931394639}
+  - component: {fileID: 1931394642}
   m_Layer: 0
-  m_Name: plataforma_ascensor_abajo
+  m_Name: plataforma_ascensor_arriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2956,7 +3153,7 @@ Transform:
   m_GameObject: {fileID: 1931394637}
   serializedVersion: 2
   m_LocalRotation: {x: -0.007178804, y: -0.000015784848, z: -0.0021987362, w: 0.9999718}
-  m_LocalPosition: {x: -67.1, y: -6.6, z: 279.2}
+  m_LocalPosition: {x: -67.6, y: 55.2, z: 278.3}
   m_LocalScale: {x: 52.03058, y: 1.0786, z: 17.981525}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3040,6 +3237,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931394637}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1931394642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931394637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0, y: 55, z: 0}
+  velocidad: 20
+  espera: 2
 --- !u!1 &1978782352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,7 +3377,7 @@ GameObject:
   - component: {fileID: 2065438655}
   - component: {fileID: 2065438654}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: plataforma_limite4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3257,12 +3469,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065438653}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.10187747, y: 0.0070351493, z: -0.0007204899, w: 0.99477184}
-  m_LocalPosition: {x: 21.8, y: 187.3, z: -465.4}
-  m_LocalScale: {x: 1, y: 24.522446, z: 258.82785}
+  m_LocalRotation: {x: -0.0000563917, y: 0.99479276, z: 0.10187699, w: -0.0029346766}
+  m_LocalPosition: {x: -134.92448, y: 30.628843, z: 171.162}
+  m_LocalScale: {x: 1, y: 24.522444, z: 258.82773}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 118665648}
   m_LocalEulerAnglesHint: {x: -11.694, y: 0.828, z: -0.168}
 --- !u!1 &2096758637
 GameObject:
@@ -3376,6 +3588,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 118665648}
   m_LocalEulerAnglesHint: {x: -0.264, y: 0, z: 0}
+--- !u!1 &2106093595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106093596}
+  - component: {fileID: 2106093597}
+  m_Layer: 0
+  m_Name: PlataformaMovil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2106093596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106093595}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0010783836, y: 0.9999914, z: 0.000004326, w: 0.0040115253}
+  m_LocalPosition: {x: -1.3635476, y: 256.0887, z: 9.271261}
+  m_LocalScale: {x: 0.014589636, y: -0.7317664, z: 0.027014995}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1380190896}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2106093597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106093595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0, y: 40, z: 0}
+  velocidad: 20
+  espera: 2
+--- !u!1 &2133185441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2133185442}
+  - component: {fileID: 2133185443}
+  m_Layer: 0
+  m_Name: plataformaMovil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2133185442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133185441}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0010783836, y: 0.9999914, z: -0.000004326, w: 0.0040115253}
+  m_LocalPosition: {x: 3.027763, y: -251.4546, z: 23.225863}
+  m_LocalScale: {x: 0.014589636, y: 0.9996858, z: 0.027014995}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1236777465}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2133185443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133185441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4490d9996b421040a96706ad9ca5919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plataformaMovil
+  desplazamiento: {x: 0, y: 40, z: 0}
+  velocidad: 20
+  espera: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3388,7 +3694,5 @@ SceneRoots:
   - {fileID: 118665648}
   - {fileID: 649379081}
   - {fileID: 1585998880}
-  - {fileID: 71214112}
-  - {fileID: 968987620}
-  - {fileID: 189963047}
-  - {fileID: 2065438657}
+  - {fileID: 115586175}
+  - {fileID: 1388965695}
